@@ -1,12 +1,15 @@
 {
   "extends": [
     "react-app",
-    "plugin:prettier/reccommended"
+    "plugin:prettier/recommended" // Corrected spelling of "recommended"
   ],
-  "prettier/prettier":[
-    "error",
-    {
-      "endOfLine": "auto"
-    }
-  ]
+  "plugins": ["prettier"], // Make sure "prettier" plugin is included
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
 }
